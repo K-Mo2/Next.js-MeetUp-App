@@ -40,6 +40,20 @@ This is a web app for practising authentication, the app asks the user to sign u
 
 10- Working with params and data fetching
 
+11- API routes
+
+12- Working with MongoDB
+
+13- Sending http requests to our API routes
+
+14- Getting data from the database
+
+15- Getting meetup details data and preparing the pages
+
+16- Adiding Head meta data
+
+17- Using fallback pages
+
 and much more .......etc
 
 ### Launch method
@@ -55,5 +69,5 @@ To run the project:
 ```
 npm install
 
-npm start
+npm run dev
 ```
