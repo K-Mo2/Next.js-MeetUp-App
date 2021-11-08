@@ -1,17 +1,23 @@
 import { ObjectId } from "bson";
 import React from "react";
 import MeetupDetails from "../../components/meetups/MeetupDetails";
+import { Fragment } from "react";
+import Head from "next/head";
 
 export default function meetupId(props) {
   return (
-    <div>
+    <Fragment>
+      <Head>
+        <title>{props.meetupData.title}</title>
+        <meta name="description" content={props.meetupData.description} />
+      </Head>
       <MeetupDetails
         image={props.meetupData.image}
         title={props.meetupData.title}
         address={props.meetupData.address}
         description={props.meetupData.description}
       />
-    </div>
+    </Fragment>
   );
 }
 
