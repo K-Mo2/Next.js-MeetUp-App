@@ -10,7 +10,7 @@
 
 ### Overview
 
-This is a web app for practising authentication, the app asks the user to sign up and once they sign up, their data is stored in the back-end and an id token is generated for each user which helps thereafter to reset, change the password, authenticate the user and log the user out when their session is expired.abs
+This is a web app for practising authentication, the app asks the user to sign up and once they sign up, their data is stored in the back-end and an id token is generated for each user which helps thereafter to reset, change the password, authenticate the user and log the user out when their session is expired.
 
 ## Technologies used
 
