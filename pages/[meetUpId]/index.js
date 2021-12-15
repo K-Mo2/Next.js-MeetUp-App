@@ -22,9 +22,7 @@ export default function meetupId(props) {
 }
 
 export async function getStaticPath() {
-  const client = await MongoClient.connect(
-    "mongodb+srv://new-user31:YhuJMcKoDHzFzpl0@cluster0.rltnc.mongodb.net/meetups?retryWrites=true&w=majority"
-  );
+  const client = await MongoClient.connect(process.env.MONGO_ATLAS_CLIENT_API);
 
   const db = client.db();
 
@@ -43,9 +41,7 @@ export async function getStaticPath() {
 }
 
 export async function getStateicProps(context) {
-  const client = await MongoClient.connect(
-    "mongodb+srv://new-user31:YhuJMcKoDHzFzpl0@cluster0.rltnc.mongodb.net/meetups?retryWrites=true&w=majority"
-  );
+  const client = await MongoClient.connect(process.env.MONGO_ATLAS_CLIENT_API);
 
   const db = client.db();
 

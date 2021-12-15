@@ -4,6 +4,7 @@ import { MongoClient } from "mongodb";
 import Head from "next/head";
 
 export default function HomePage(props) {
+  console.log(process.env.MONGO_ATLAS_CLIENT_API);
   return (
     <div>
       <Head>
@@ -19,9 +20,7 @@ export default function HomePage(props) {
 }
 
 export async function getStaticProps() {
-  const client = await MongoClient.connect(
-    "mongodb+srv://new-user31:YhuJMcKoDHzFzpl0@cluster0.rltnc.mongodb.net/meetups?retryWrites=true&w=majority"
-  );
+  const client = await MongoClient.connect(process.env.MONGO_ATLAS_CLIENT_API);
 
   const db = client.db();
 
